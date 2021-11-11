@@ -1,4 +1,4 @@
-# Bionano
+# Genome data processing
 This repository contains data processing pipelines developed for various analyses of genome-wide data
 
 # Citation
