@@ -66,7 +66,7 @@ For example:\
 This script will generate a combined pipe separated file containing the defined columns. The combined columns will be named based on the original input file names.
 
 
-## How to cite
+## Citation
 If you use this code in your work, please cite
 **TBA**\
 \
