@@ -4,7 +4,7 @@ To get running information for the bash scripts do\
 `script.sh -h`
 
 ## 1. Region coverage calculation
-This pipeline reports seqeuencing depth and coverage for selected genes extracted from gff annotation file. 
+This pipeline reports sequencing depth and coverage for selected genes extracted from gff annotation file. 
 The workflow is divided into three steps described below.
 
 >_*External programs*_\
@@ -34,7 +34,7 @@ The script will produce two output files:
 1. `<input gff file name>_gene_annotations.list`\
 This file contains a list of "gene" annotations corresponding to the input list of gene names. This file can be used to review the success of loci fetching
 2. `<input gff file name>_<element name>_extension<number of bases to end extend>_collapsed.bed`\
-This file contains the details of the defined elements for locus of interets. Overlapping elements will be merged.
+This file contains the details of the defined elements for locus of interest. Overlapping elements will be merged.
 
 ### *STEP 2*
 -------------
@@ -63,7 +63,7 @@ Usage:` collect_tables_v0.1.sh <list of files to combine> <common columns start 
 For example:\
 `collect_tables_v0.1.sh tab_delimited_table_files_to_merge.list 1 8 12 12 "column1|column2|etc." /tmp combined_coverages_output`\
 \
-This script will generate a combined pipe separated file contianing the defined columns. The combined columns will be named based on the input file name.
+This script will generate a combined pipe separated file containing the defined columns. The combined columns will be named based on the original input file names.
 
 
 ## How to cite
