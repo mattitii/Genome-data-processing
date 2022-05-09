@@ -14,8 +14,7 @@ samtools http://samtools.sourceforge.net/ (version tested samtools 1.13)
 ### *STEP 1*
 -------------
 **Requires bedtools**\
-First, a user defined set of genes (see e.g. `data/loci_SET5.txt`) and annotations per gene (e.g. CDS) will be extracted from the provided gff file.
-Overlapping elements will be merged to a single entry.\
+First, a user defined set of genes and user defined annotations per gene (e.g. CDS) will be extracted from the provided gff file. The gene set file contains a list of gene gene names one gene name per line (see e.g. `data/loci_SET5.txt`). The gene name needs to be present in gff description entries `ID=gene-${GENE};` and `gene=${GENE};`, where `${GENE}` is the gene name.\
 \
 Usage:\
 `loci_extractor_v0.3.sh <gff annotation file> 
@@ -27,14 +26,15 @@ Usage:\
 For example:\
 `loci_extractor_v0.3.sh GRCh37_latest_genomic.gff example_data/loci_SET5.txt CDS 2 example_output`
 
-The gff can be downloaded from
+The example gff can be downloaded from\
 https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/annotation/GRCh37_latest/refseq_identifiers/GRCh37_latest_genomic.gff.gz
+\
 \
 The script will produce two output files:
 1. `<input gff file name>_gene_annotations.list`\
 This file contains a list of "gene" annotations corresponding to the input list of gene names. This file can be used to review the success of loci fetching
 2. `<input gff file name>_<element name>_extension<number of bases to end extend>_collapsed.bed`\
-This file contains the details of the defined elements for locus of interest. Overlapping elements will be merged.
+This file contains the details of the defined elements for locus of interest. Overlapping elements per gene will be merged.
 
 ### *STEP 2*
 -------------
