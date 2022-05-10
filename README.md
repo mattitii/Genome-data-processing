@@ -8,8 +8,8 @@ This pipeline reports sequencing depth and coverage for selected genes extracted
 The workflow is divided into three steps described below.
 
 >_*External programs*_\
-bedtools https://bedtools.readthedocs.io/en/latest/ (version tested bedtools 2.29.0)\
-samtools http://samtools.sourceforge.net/ (version tested samtools 1.13)
+BEDTools https://bedtools.readthedocs.io/en/latest/ (version tested bedtools 2.29.0)\
+SAMtools http://samtools.sourceforge.net/ (version tested samtools 1.13)
 
 ### *STEP 1*
 -------------
@@ -66,8 +66,6 @@ For example:\
 This script will generate a combined pipe separated file containing the defined columns. The combined columns will be named based on the original input file names.
 
 
-## Citations
-If you use this code in your work, please cite
-**TBA**\
-\
-**Do not forget to cite the dependent external programs**
+## References
+Li H et al. (2009) The sequence alignment/map format and SAMtools. **Bioinformatics**, *25*, 2078-2079.\
+Quinlan AR & Hall IM (2010) BEDTools: a flexible suite of utilities for comparing genomic features. **Bioinformatics**, *26*, 841-842.
