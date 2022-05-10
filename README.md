@@ -13,7 +13,7 @@ SAMtools http://samtools.sourceforge.net/ (version tested samtools 1.13)
 
 ### *STEP 1*
 -------------
-**Requires bedtools**\
+**Requires BEDTools**\
 First, a user defined set of genes and user defined annotations per gene (e.g. CDS) will be extracted from the provided gff file. The gene set file contains a list of gene gene names one gene name per line (see e.g. `data/loci_SET5.txt`). The gene name needs to be present in gff description entries `ID=gene-${GENE};` and `gene=${GENE};`, where `${GENE}` is the gene name.\
 \
 Usage:\
@@ -38,7 +38,7 @@ This file contains the details of the defined elements for locus of interest. Ov
 
 ### *STEP 2*
 -------------
-**Requires bedtools & samtools**\
+**Requires BEDTools & SAMtools**\
 Using the region file generated in the step 1, we can now calculate the per site depth and region coverage (user defined minimum depth, base quality & mapping quality) using the script `region_coverage_calculator_v0.1.sh`\
 \
 Usage:\
