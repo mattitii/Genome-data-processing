@@ -58,7 +58,7 @@ This file contains coverage counts for each separate element in the region .bed 
 If you have ran the analysis for multiple samples with the same set of loci, the collection of results into a single file can be done using the 
 `collect_tables_v0.1.sh` script.\
 \
-Usage:` collect_tables_v0.1.sh <list of files to combine> <common columns start e.g. 1> <common columns end e.g. 8> <columns to combine start> <columns to combine end> <a list of shared column names of a form col1|col2|etc.> <full path to your temporary directory> <output prefix>`\
+Usage:` collect_tables_v0.1.sh <a list of files to combine> <common columns start e.g. 1> <common columns end e.g. 8> <columns to combine start> <columns to combine end> <a list of shared column names of a form col1|col2|etc.> <full path to your temporary directory> <output prefix>`\
 \
 For example:\
 `collect_tables_v0.1.sh tab_delimited_table_files_to_merge.list 1 8 12 12 "column1|column2|etc." /tmp combined_coverages_output`\
