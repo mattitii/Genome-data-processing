@@ -14,7 +14,7 @@ SAMtools http://samtools.sourceforge.net/ (version tested samtools 1.13)
 ### *STEP 1*
 -------------
 **Requires BEDTools**\
-First, a user defined set of genes and user defined annotations per gene (e.g. CDS) will be extracted from the provided gff file. The gene set file contains a list of gene gene names one gene name per line (see e.g. `data/loci_SET5.txt`). The gene name needs to be present in gff description entries `ID=gene-${GENE};` and `gene=${GENE};`, where `${GENE}` is the gene name.\
+First, a user defined set of genes and user defined annotations per gene (e.g. CDS) will be extracted from the provided gff file. The gene set file contains a list of gene names one gene name per line (see e.g. `data/loci_SET5.txt`). The gene name needs to be present in gff description entries `ID=gene-${GENE};` and `gene=${GENE};`, where `${GENE}` is the gene name.\
 \
 Usage:\
 `loci_extractor_v0.3.sh <gff annotation file> 
