@@ -4,7 +4,7 @@ To get running information for the bash scripts do\
 `script.sh -h`
 
 ## 1. Region coverage calculation
-This pipeline reports sequencing depth and coverage for selected genes extracted from gff annotation file. 
+This pipeline reports sequencing depth and coverage for selected genomic elements obtained from gff annotation file. 
 The workflow is divided into three steps described below.
 
 >_*External programs*_\
@@ -19,7 +19,7 @@ First, a user defined set of genes and user defined annotations per gene (e.g. C
 Usage:\
 `loci_extractor_v0.3.sh <gff annotation file> 
 <a list of candidate gene IDs, one ID per line>
-<type of annotation to include e.g. CDS or exon>
+<the type of annotations to include e.g. CDS or exon>
 <number of bases to extend around start and end points of each element>
 <output prefix>`\
 \
@@ -29,6 +29,7 @@ For example:\
 The example gff can be downloaded from\
 https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/annotation/GRCh37_latest/refseq_identifiers/GRCh37_latest_genomic.gff.gz
 \
+IMPORTANT NOTE! This pipeline has been developed based on the formatting of the abovementioned annotation file which may differ between annotation files.
 \
 The script will produce two output files:
 1. `<input gff file name>_gene_annotations.list`\
