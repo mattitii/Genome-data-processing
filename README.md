@@ -66,6 +66,6 @@ For example:\
 This script will generate a combined pipe separated file containing the defined columns. The combined columns will be named based on the original input file names.
 
 
-## References
+### References
 Li H et al. (2009) The sequence alignment/map format and SAMtools. **Bioinformatics**, *25*, 2078-2079.\
 Quinlan AR & Hall IM (2010) BEDTools: a flexible suite of utilities for comparing genomic features. **Bioinformatics**, *26*, 841-842.
